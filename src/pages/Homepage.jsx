@@ -42,39 +42,62 @@ const Homepage = () => {
       </section>
 
       {/* section2 */}
-      <section className="py-10 bg-blue-50">
-  <p className="text-center text-2xl font-bold mb-10 text-blue-800">
-    Need to know
-  </p>
-  <div className="flex justify-around gap-8">
-    {/* Sub-Section 1 */}
-    <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 w-[300px] border border-blue-300">
-      <Speedometer percentage={percentage1} />
-      <p className="mt-4 text-center text-blue-700">
-        80% of Indian companies hit by cybersecurity incidents after
-        miscommunication with IT team, according to a Kaspersky report.
-      </p>
-    </div>
-    {/* Sub-Section 2 */}
-    <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 w-[300px] border border-blue-300">
-      <Speedometer percentage={percentage2} />
-      <p className="mt-4 text-center text-blue-700">
-        84.7% of surveyed organizations were affected by a successful
-        cyberattack. (CyberEdge Group 2023 Cyberthreat Defense Report)
-      </p>
-    </div>
-    {/* Sub-Section 3 */}
-    <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 w-[300px] border border-blue-300">
-      <Speedometer percentage={percentage3} />
-      <p className="mt-4 text-center text-blue-700">
-        20% of Indian users fell victim to cyber threats in the first
-        quarter of 2024, according to a study.
-      </p>
-    </div>
-  </div>
-</section>
+      <section className="py-12 bg-blue-100 flex justify-center items-center">
+        <div className="flex space-x-2 flex items-center justify-center ">
+          {/* Heading Circle */}
+          <div className="flex justify-center items-center w-50 h-40 p-3 bg-blue-700 text-white rounded-full shadow-lg">
+            <p className="text-center text-3xl font-bold px-4">What We Do</p>
+          </div>
+
+          {/* Description Circle */}
+          <div className="flex flex-wrap justify-center items-center w-[70%] h-[40%] bg-white text-blue-800 rounded-full shadow-lg border border-blue-300 p-6">
+            <p className="text-lg text-center">
+              At CyberWatch India, we are dedicated to safeguarding the
+              integrity of India's IT and OT infrastructures by providing
+              timely, actionable insights into cyber threats. Our platform
+              leverages advanced Machine Learning algorithms to identify and
+              gather data from various online sources, including forums, social
+              media, paste sites, and more.
+            </p>
+          </div>
+        </div>
+      </section>
 
 
+ 
+
+      {/* section3 */}
+      <section className="py-10 bg-blue-100">
+        <p className="text-center text-2xl font-bold mb-10 text-black">
+          Facts and Statistics
+        </p>
+        <div className="flex justify-around gap-8">
+          {/* Sub-Section 1 */}
+          <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 w-[300px] border border-blue-300">
+            <Speedometer percentage={percentage1} />
+            <p className="mt-4 text-center text-blue-700">
+              80% of Indian companies hit by cybersecurity incidents after
+              miscommunication with IT team, according to a Kaspersky report.
+            </p>
+          </div>
+          {/* Sub-Section 2 */}
+          <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 w-[300px] border border-blue-300">
+            <Speedometer percentage={percentage2} />
+            <p className="mt-4 text-center text-blue-700">
+              84.7% of surveyed organizations were affected by a successful
+              cyberattack. (CyberEdge Group 2023 Cyberthreat Defense Report)
+            </p>
+          </div>
+          {/* Sub-Section 3 */}
+          <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 w-[300px] border border-blue-300">
+            <Speedometer percentage={percentage3} />
+            <p className="mt-4 text-center text-blue-700">
+              20% of Indian users fell victim to cyber threats in the first
+              quarter of 2024, according to a study.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
