@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Speedometer from "./speedometer";
+import FeaturesSection from "./FeaturesSection.jsx"; // Import the FeaturesSection component
+import CircleWithArrows from "./CircleWithArrows.jsx";
 
 const Homepage = () => {
   // Define your desired percentage values
@@ -63,9 +65,6 @@ const Homepage = () => {
         </div>
       </section>
 
-
- 
-
       {/* section3 */}
       <section className="py-10 bg-blue-100">
         <p className="text-center text-2xl font-bold mb-10 text-black">
@@ -93,10 +92,32 @@ const Homepage = () => {
             <Speedometer percentage={percentage3} />
             <p className="mt-4 text-center text-blue-700">
               20% of Indian users fell victim to cyber threats in the first
-              quarter of 2024, according to a study.
+              quarter of 2024, according to a study. <br></br>(The Hindu)
             </p>
           </div>
         </div>
+      </section>
+
+      {/* section4 */}
+      <section>
+        <FeaturesSection />
+      </section>
+
+      {/* section5 */}
+      <section >
+        <p class="text-center font-poppins text-[40px] text-blue-900 pt-5 ">
+          Stay Ahead of Threats
+        </p>
+        <CircleWithArrows />
+      </section>
+
+      {/* section6 */}
+      <section>
+        <footer className="bg-blue-900 text-white py-4 w-full text-center">
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} ThreatLens. All rights reserved.
+          </p>
+        </footer>
       </section>
     </div>
   );
