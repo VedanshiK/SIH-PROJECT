@@ -6,7 +6,7 @@ const Homepage = () => {
     <div>
       {/* section1 */}
       <section class="bg-[url('../assets/homepg_img.png')] bg-cover bg-center w-screen h-screen flex flex-col justify-center">
-        <div class="flex flex-col w-[40%] pl-5">
+        <div class="flex flex-col w-[37%] pl-5">
           <h1 class="text-6xl font-bold text-white">
             Welcome to{" "}
             <span class="text-black text-7xl font-playfair">ThreatLens</span>
@@ -36,7 +36,9 @@ const Homepage = () => {
       {/* section2 */}
       <section>
         <p>What we do?</p>
-        
+        <div>
+
+        </div>
       </section>
     </div>
   );
